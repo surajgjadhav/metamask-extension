@@ -6,8 +6,8 @@ import Popover from '../../ui/popover';
 import Box from '../../ui/box';
 
 import {
-  DISPLAY,
-  FLEX_DIRECTION,
+  Display,
+  FlexDirection,
   JustifyContent,
   TextVariant,
 } from '../../../helpers/constants/design-system';
@@ -34,8 +34,8 @@ const SetApproveForAllWarning = ({
 
   const footer = (
     <Box
-      display={DISPLAY.FLEX}
-      flexDirection={FLEX_DIRECTION.COLUMN}
+      display={Display.Flex}
+      flexDirection={FlexDirection.Column}
       justifyContent={JustifyContent.SPACE_BETWEEN}
       className="set-approval-for-all-warning__footer"
       gap={4}
@@ -61,8 +61,8 @@ const SetApproveForAllWarning = ({
   return (
     <Popover className="set-approval-for-all-warning__content" footer={footer}>
       <Box
-        display={DISPLAY.FLEX}
-        flexDirection={FLEX_DIRECTION.ROW}
+        display={Display.Flex}
+        flexDirection={FlexDirection.Row}
         padding={4}
         className="set-approval-for-all-warning__content__header"
       >
@@ -75,12 +75,12 @@ const SetApproveForAllWarning = ({
         </Text>
       </Box>
       <Box
-        display={DISPLAY.FLEX}
+        display={Display.Flex}
         padding={4}
         justifyContent={JustifyContent.spaceBetween}
         className="set-approval-for-all-warning__content__account"
       >
-        <Box display={DISPLAY.FLEX}>
+        <Box display={Display.Flex}>
           <Identicon address={senderAddress} diameter={32} />
           <Text
             variant={TextVariant.bodyMd}

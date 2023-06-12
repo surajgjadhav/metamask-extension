@@ -5,9 +5,9 @@ import { I18nContext } from '../../../../contexts/i18n';
 import Box from '../../../ui/box';
 import Typography from '../../../ui/typography';
 import {
-  DISPLAY,
-  FONT_WEIGHT,
-  FLEX_DIRECTION,
+  Display,
+  FontWeight,
+  FlexDirection,
   AlignItems,
   JustifyContent,
   Color,
@@ -44,14 +44,14 @@ export default function SignatureRequestMessage({
 
   return (
     <Box
-      display={DISPLAY.FLEX}
-      flexDirection={FLEX_DIRECTION.COLUMN}
+      display={Display.Flex}
+      flexDirection={FlexDirection.Column}
       onScroll={debounce(setMessageIsScrolledAtBottom, 25)}
       className="signature-request-message"
     >
       {messageIsScrollable ? (
         <Box
-          display={DISPLAY.FLEX}
+          display={Display.Flex}
           alignItems={AlignItems.center}
           justifyContent={JustifyContent.center}
           borderColor={BorderColor.borderDefault}
@@ -80,7 +80,7 @@ export default function SignatureRequestMessage({
         ref={setMessageRootRef}
       >
         <Typography
-          fontWeight={FONT_WEIGHT.BOLD}
+          fontWeight={FontWeight.Bold}
           color={TextColor.textDefault}
           marginLeft={4}
           className="signature-request-message__title"
